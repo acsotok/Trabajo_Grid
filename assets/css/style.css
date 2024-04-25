@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7e7e7;
+}
+
+.header{
+    grid-area: header;
+    background-color: #385277;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    margin-left: 10px;
+}
+
+.main{
+    grid-area: main;
+    margin-top: 10px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    line-height: 55px;
+    color: #656565;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main'
+        'footer footer' ;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0px;
+    height: 100vh;
+}
+
+.compras{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tipos{
+    color: grey;
+}
+
+.color{
+    color: #939393
+}
+/*
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+*/
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23em;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card-body{
+    flex-grow: 1;
+    background-color: white;
+    width: 23em;
+    text-align: center;
+}
+
+.card-header{
+    background-color: white;
+    width: 23em;
+    text-align: center;
+}
+
+.img1{
+    height: 400px;
+}
+
+.img2{
+    height: 400px;
+}
+
+.img3{
+    height: 400px;
+}
+
+.img4{
+    height: 400px;
+    width: 250px;
+}
+
+.card-footer{
+    background-color: #e7e7e7;
+}
+
+.btn{
+    background-color: #385277;
+    border-color: #385277;
+    color: white;
+    line-height: 35px;
+    width: 20.5em;
+    text-align: center;
+    font-size: 18px;
+}
